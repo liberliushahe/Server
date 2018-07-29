@@ -1,19 +1,19 @@
 package com.main;
 
-import com.vitea.server.DiscardServer;
+import com.vitea.server.ViteaServer;
 
 /**
- * Hello world!
+ * 服务器启动程序
  *
  */
 public class App 
 {
     public static void main( String[] args )
     {
-        int port=9999;
+        int port=12145;
         try {
         
-			new DiscardServer(port).run();
+			new ViteaServer(port).run();
 
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
